@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  padding: 173px 0;
+  background-color: hsl(185deg, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: top 200% left -115%, bottom 245% right -180%;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  font-size: 1rem;
+  color: hsl(229deg, 23%, 23%);
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: hsl(0deg, 0%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background: white;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.profile-card {
+  position: relative;
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.profile-card .profile-banner img {
+  display: block;
+}
+.profile-card .profile-picture {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  outline: 5px solid white;
+}
+.profile-card .bold {
+  font-weight: 700;
+}
+.profile-card .profile-details {
+  padding-top: 4.1rem;
+  background: #fff;
+}
+.profile-card .profile-details .profile {
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+.profile-card .profile-details .profile .profile-name {
+  margin-bottom: 0.4rem;
+}
+.profile-card .profile-details .profile .profile-name span {
+  color: hsl(229deg, 23%, 23%);
+}
+.profile-card .profile-age {
+  font-weight: 400 !important;
+}
+.profile-card .profile-stats {
+  padding: 1.3rem 3.1rem 1.3rem 2.6rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid hsl(0deg, 0%, 84%);
+}
+.profile-card .profile-stats .stat {
+  text-align: center;
+}
+.profile-card .profile-stats .stat .num-stat {
+  margin-bottom: 0.2rem;
+}
+.profile-card .profile-stats .stat .unit-stat {
+  font-size: 0.6rem;
+  letter-spacing: 0.06rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+    height: 667px;
+    padding: 147px calc((100vw - 325px) / 2);
+  }
+}/*# sourceMappingURL=style.css.map */

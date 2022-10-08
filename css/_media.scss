@@ -1,0 +1,7 @@
+@media screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+    height: 667px;
+    padding: 147px calc((100vw - 325px) / 2);
+  }   
+}
